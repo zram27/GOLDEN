@@ -55,9 +55,10 @@
 					</li>
 
 
+
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="dashboard.html">
-							<i class="align-middle mr-2 far fa-fw fa-list-alt"></i> <span class="align-middle">Dashboard</span>
+							<i class="align-middle mr-2 far fa-fw fa-key"></i> <span class="align-middle">Dashboard</span>
 						</a>
 					</li>
 
@@ -67,7 +68,7 @@
 						</a>
 					</li>
 
-					<li class="sidebar-item active">
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="investment-assets.html">
 							<i class="align-middle mr-2 far fa-fw fa-money-bill-alt"></i> <span class="align-middle">Investment Assets</span>
 						</a>
@@ -80,7 +81,7 @@
 						</a>
 					</li>
 
-					<li class="sidebar-item">
+					<li class="sidebar-item active">
 						<a data-target="#plans" data-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle mr-2 fas fa-fw fa-compass"></i> <span class="align-middle">Plans</span>
 						</a>
@@ -97,7 +98,7 @@
 
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="sandbox.html">
-							<i class="align-middle mr-2 far fa-fw fa-comment-dollar"></i> <span class="align-middle">Sandbox</span>
+							<i class="align-middle mr-2 far fa-fw fa-table"></i> <span class="align-middle">Sandbox</span>
 						</a>
 					</li>
 
@@ -106,7 +107,6 @@
 							<i class="align-middle mr-2 far fa-fw fa-table"></i> <span class="align-middle">Intro Walkthrough</span>
 						</a>
 					</li>
-
 
 
 				</ul>
@@ -235,169 +235,206 @@
 
 					<div class="header">
 						<h1 class="header-title">
-							Welcome back, Jack!
+							Your Retirement Plans
 						</h1>
-						<p class="header-subtitle">Let's see what your retirement spending looks like.</p>
+						<p class="header-subtitle">Design and edit your retirement plans.</p>
 					</div>
 
 					<div class="col-12">
 						<div class="card">
 							<div class="card-header">
-								<h5 class="card-title">Option #1: Automatic</h5>
-								<h6 class="card-subtitle text-muted">Securely connect your accounts so we always have accurate information for you.</h6>
-							</div>
-							<div class="card-body">
-								<div class="mb-3 row">
-									<div class="col-sm-10 xl-lg-ml-sm-auto">
-										<button type="submit" class="btn btn-secondary">Connect Account</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12">
-						<div class="card">
-							<div class="card-header">
-								<h5 class="card-title">Option #2: Manual</h5>
-								<h6 class="card-subtitle text-muted">Manually add your accounts if you aren't comfortable using our secure connection software.</h6>
-							</div>
-							<div class="card-body">
-								<div class="mb-3 row">
-									<div class="col-2">
-										<label class="col-form-label text-sm-right">Type</label>
-									</div>
-									<div class="col-2">
-										<label class="col-form-label text-sm-right">Owner</label>
-									</div>
-									<div class="col-4">
-										<label class="col-form-label text-sm-center">Balance</label>
-									</div>
-									<div class="col-2">
-										<label class="col-form-label text-sm-right">Yearly Contrbution</label>
-									</div>
-									<div class="col-2">
-										<label class="col-form-label text-sm-right">Employer Contribution</label>
-									</div>
-
-									<div class="col-2">
-										<select class="form-control mb-3">
-											<option selected>Select Account</option>
-											<option>401K</option>
-											<option>403b</option>
-											<option>457</option>
-											<option>IRA</option>
-											<option>Roth IRA</option>
-										</select>
-									</div>
-									<div class="col-2">
-										<select class="form-control mb-3">
-											<option selected>Select Owner</option>
-											<option>Retiree</option>
-											<option>Spouse</option>
-										</select>
-									</div>
-									<div class="col-4">
-										<input type="text" class="form-control" data-mask="000,000,000.00" data-reverse="true">
-									</div>
-									<div class="col-2">
-										<input type="text" class="form-control" data-mask="000,000,000.00" data-reverse="true">
-									</div>
-									<div class="col-2">
-										<input type="text" class="form-control" data-mask="000,000,000.00" data-reverse="true">
-									</div>
-								</div>
-
-
-								<div class="mb-3 row">
-									<div class="col-sm-10 xl-lg-ml-sm-auto">
-										<button type="submit" class="btn btn-secondary">Add Account</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-					<div class="col-12">
-						<div class="card">
-							<div class="card-header">
-								<h5 class="card-title">Investment Assets</h5>
+								<h5 class="card-title">Your Saved Retirement Plans</h5>
 								<h6 class="card-subtitle text-muted"></h6>
 							</div>
 							<table class="table table-striped">
 								<thead>
 									<tr>
-										<th style="width:20%;">Account Type</th>
-										<th style="width:20%;">Owner</th>
-										<th style="width:20%">Balance</th>
-										<th style="width:15%">Personal Contributions</th>
-										<th style="width:15%">Employer Contributions</th>
+										<th style="width:10%;">#</th>
+										<th style="width:30%;">Name</th>
+										<th style="width:10%">Retirement Age</th>
+										<th style="width:10%">Spouse Retirement Age</th>
+										<th style="width:20%">Required Income</th>
+										<th style="width:20%">Target Income</th>
 										<th>Actions</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>401k</td>
-										<td>Jack</td>
-										<td>$426,543</td>
-										<td>$15,000</td>
-										<td>$3,000</td>
+										<td>1</td>
+										<td>Retire @ 60 with a Lake House</td>
+										<td>60</td>
+										<td>63</td>
+										<td>$60,000</td>
+										<td>$80,000</td>
 										<td class="table-action">
 											<a href="#"><i class="align-middle fas fa-fw fa-pen"></i></i></a>
 											<a href="#"><i class="align-middle fas fa-fw fa-trash"></i></a>
 										</td>
+										<td><button type="submit" class="btn btn-secondary">Enable</button></td>
+									</tr>
+									<tr class="table-secondary">
+										<td>2</td>
+										<td>Retire @ 65, Keep the business</td>
+										<td>65</td>
+										<td>63</td>
+										<td>$65,000</td>
+										<td>$100,000</td>
+										<td class="table-action">
+											<a href="#"><i class="align-middle fas fa-fw fa-pen"></i></i></a>
+											<a href="#"><i class="align-middle fas fa-fw fa-trash"></i></a>
+										</td>
+										<td><button type="submit" class="btn btn-outline-secondary">Enabled</button></td>
 									</tr>
 									<tr>
-										<td>Roth IRA</td>
-										<td>Jack</td>
-										<td>$126,543</td>
-										<td>$6,000</td>
-										<td></td>
+										<td>3</td>
+										<td>Retire @ 62 Move to Florida</td>
+										<td>62</td>
+										<td>85</td>
+										<td>$70,000</td>
+										<td>$90,000</td>
 										<td class="table-action">
 											<a href="#"><i class="align-middle fas fa-fw fa-pen"></i></i></a>
 											<a href="#"><i class="align-middle fas fa-fw fa-trash"></i></a>
 										</td>
-									</tr>
-									<tr>
-										<td>403b</td>
-										<td>Jill</td>
-										<td>$526,543</td>
-										<td>$17,000</td>
-										<td>$5,000</td>
-										<td class="table-action">
-											<a href="#"><i class="align-middle fas fa-fw fa-pen"></i></i></a>
-											<a href="#"><i class="align-middle fas fa-fw fa-trash"></i></a>
-										</td>
-									</tr>
-									<tr>
-										<td>Roth IRA</td>
-										<td>Jill</td>
-										<td>$26,543</td>
-										<td>$6,000</td>
-										<td></td>
-										<td class="table-action">
-											<a href="#"><i class="align-middle fas fa-fw fa-pen"></i></i></a>
-											<a href="#"><i class="align-middle fas fa-fw fa-trash"></i></a>
-										</td>
-									</tr>
-									<tr>
-										<td>Taxable</td>
-										<td>Jack & Jill</td>
-										<td>$210,543</td>
-										<td>$5,000</td>
-										<td></td>
-										<td class="table-action">
-											<a href="#"><i class="align-middle fas fa-fw fa-pen"></i></i></a>
-											<a href="#"><i class="align-middle fas fa-fw fa-trash"></i></a>
-										</td>
+										<td><button type="submit" class="btn btn-secondary">Enable</button></td>
 									</tr>
 
 								</tbody>
 							</table>
 						</div>
 					</div>
+
+					<div class="col-12">
+						<div class="card">\
+							<div class="card-header">
+								<h4>Design a New Plan</h4>
+								<h5 class="card-title">Basic Information</h5>
+								<h6 class="card-subtitle text-muted"></h6>
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Retirement Age:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" placeholder="65">
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Death Age:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" placeholder="92">
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Spouse's Retirement Age:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" placeholder="65">
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Spouse's Death Age:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" placeholder="92">
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Required Income:</label>
+										<div class="col-sm-10">
+												<input type="text" class="form-control" data-mask="000,000,000.00" data-reverse="true">
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Target Income:</label>
+										<div class="col-sm-10">
+												<input type="text" class="form-control" data-mask="000,000,000.00" data-reverse="true">
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Target Final Asset Balance:</label>
+										<div class="col-sm-10">
+												<input type="text" class="form-control" data-mask="000,000,000.00" data-reverse="true">
+										</div>
+									</div>
+
+
+
+
+								</form>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title">Advanced Settings</h5>
+								<h6 class="card-subtitle text-muted"></h6>
+							</div>
+							<div class="card-body">
+								<form>
+									<fieldset class="mb-3">
+										<div class="row">
+											<label class="col-form-label col-sm-2 text-sm-right pt-sm-0">Allow Roth Conversions if Beneficial</label>
+											<div class="col-sm-10">
+												<label class="form-check">
+													<input name="radio-3" type="radio" class="form-check-input" checked>
+													<span class="form-check-label">Allow</span>
+												</label>
+												<label class="form-check">
+													<input name="radio-3" type="radio" class="form-check-input">
+													<span class="form-check-label">Don't Allow</span>
+												</label>
+											</div>
+										</div>
+									</fieldset>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Spending Model</label>
+										<div class="col-sm-10">
+											<select class="form-control mb-3">
+												<option selected>Select Spending Method</option>
+												<option>Constant Spending</option>
+												<option>Bernicke's Reality</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<label class="col-form-label col-sm-2 text-sm-right">Asset Allocation</label>
+										<div class="col-sm-10">
+											<select class="form-control mb-3">
+												<option selected>Select Asset Allocation</option>
+												<option> 100% Stocks / 0% Bonds</option>
+												<option> 90% Stocks / 10% Bonds</option>
+												<option> 80% Stocks / 20% Bonds</option>
+												<option> 70% Stocks / 30% Bonds</option>
+												<option> 60% Stocks / 40% Bonds</option>
+												<option> 50% Stocks / 50% Bonds</option>
+												<option> 40% Stocks / 60% Bonds</option>
+												<option> 30% Stocks / 70% Bonds</option>
+												<option> 20% Stocks / 80% Bonds</option>
+												<option> 10% Stocks / 90% Bonds</option>
+												<option> 0% Stocks / 100% Bonds</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="mb-3 row">
+										<div class="col-sm-10 ml-sm-auto">
+											<button type="submit" class="btn btn-secondary">Save Retirement Plan</button>
+										</div>
+									</div>
+
+								</form>
+							</div>
+						</div>
+
+
+
+					</div>
+
+
 
 				</div>
 			</main>
