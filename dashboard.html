@@ -229,7 +229,7 @@
 
 					<div class="header">
 						<h1 class="header-title">
-							Welcome back, Jack!
+							Dashboard
 						</h1>
 						<p class="header-subtitle">Let's see what your retirement spending looks like.</p>
 					</div>
@@ -239,7 +239,9 @@
 							<div class="row">
 
 							</div>
-							<h1 class="display-5 mt-1 mb-3">Selected Plan:</h1> <h2>Plan #3- Retire @ 60 with Lake House</h2>
+							<h1 class="display-5 mt-1 mb-3">Selected Plan:</h1>
+							<input class="form-control form-control-lg" type="text" placeholder="Plan #3- Retire @ 60 with Lake House" readonly>
+
 						</div>
 					</div>
 
@@ -254,16 +256,50 @@
 
 										<div class="col-auto">
 											<div class="avatar">
-												<div class="avatar-title rounded-circle bg-primary-dark">
+												<div class="avatar-title rounded-circle bg-secondary-dark">
 													<i class="align-middle" data-feather="dollar-sign"></i>
 												</div>
 											</div>
 										</div>
 									</div>
-									<h1 class="display-5 mt-1 mb-3 text-success">95%</h1>
+									<div class="row">
+										<div class="col-12">
+														<h1 class="display-5 mt-1 mb-3 text-success text-center-big">95%   /    87%</h1>
+										</div>
+									</div>
+									<h6 class="display-5 mt-1 mb-3 text-center-small">95% chance your needs are met  /  87% chance your target income is met </h6>
 								</div>
 							</div>
 						</div>
+
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+										<h5 class="card-title">Total Assets</h5>
+										<h6 class="card-subtitle text-muted"></h6>
+									</div>
+									<div class="card-body">
+										<div class="chart">
+											<canvas id="chartjs-line"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-6">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+										<h5 class="card-title">Income</h5>
+										<h6 class="card-subtitle text-muted"></h6>
+									</div>
+									<div class="card-body">
+										<div class="chart">
+											<canvas id="chartjs-line2"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
 
 						<div class="row">
 							<div class="col-12">
@@ -357,7 +393,7 @@
 
 										<div class="col-auto">
 											<div class="avatar">
-												<div class="avatar-title rounded-circle bg-primary-dark">
+												<div class="avatar-title rounded-circle bg-secondary-dark">
 													<i class="align-middle" data-feather="dollar-sign"></i>
 												</div>
 											</div>
@@ -377,7 +413,7 @@
 
 										<div class="col-auto">
 											<div class="avatar">
-												<div class="avatar-title rounded-circle bg-primary-dark">
+												<div class="avatar-title rounded-circle bg-secondary-dark">
 													<i class="align-middle" data-feather="shopping-cart"></i>
 												</div>
 											</div>
@@ -397,7 +433,7 @@
 
 										<div class="col-auto">
 											<div class="avatar">
-												<div class="avatar-title rounded-circle bg-primary-dark">
+												<div class="avatar-title rounded-circle bg-secondary-dark">
 													<i class="align-middle" data-feather="activity"></i>
 												</div>
 											</div>
@@ -412,35 +448,7 @@
 
 
 					<div class="row">
-						<div class="col-12 col-lg-6">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-									<h5 class="card-title">Total Assets</h5>
-									<h6 class="card-subtitle text-muted"></h6>
-								</div>
-								<div class="card-body">
-									<div class="chart">
-										<canvas id="chartjs-line"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-									<h5 class="card-title">Income</h5>
-									<h6 class="card-subtitle text-muted"></h6>
-								</div>
-								<div class="card-body">
-									<div class="chart">
-										<canvas id="chartjs-line2"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
+												<div class="col-12 col-lg-6">
 							<div class="card flex-fill w-100">
 								<div class="card-header">
 									<h5 class="card-title">Individual Assets</h5>
@@ -497,16 +505,6 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
-
-
 				</div>
 			</main>
 			<footer class="footer">

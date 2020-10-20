@@ -26,6 +26,26 @@ background-color: #e5e6e7;
 }
 .landing-bg{
 
-  background-image: url(img\photos\unsplash-3.jpg);
+  background-image: url("family.jpg");
+background-size: 100% 100%;
   background-color: black;
+  height: auto;
+}
+
+
+.text-center-big{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-center-small{
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.custom-range{
+  width: 500px;
+margin-top: 10px;
+
 }
